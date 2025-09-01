@@ -1,17 +1,19 @@
+<!-- _layouts/default.html -->
 <!doctype html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <title>{{ page.title }}</title>
-</head>
-<body>
-  {% include header.html %}
-  
-  <main>
-    {{ content }}
-  </main>
-  
-  {% include footer.html %}
-</body>
-</html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
 
+    {% include head.html %}   {# ← your big meta/SEO block goes here #}
+  </head>
+  <body>
+    {% include header.html %} {# ← your visible nav bar/logo etc. #}
+
+    <main>
+      {{ content }}
+    </main>
+
+    {% include footer.html %}
+  </body>
+</html>
